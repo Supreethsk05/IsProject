@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt QR Code Data</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decrypt QR Code Data</h1>
+        <input type="text" id="user-id" placeholder="User ID" />
+        <input type="password" id="password" placeholder="Password" />
+        <textarea id="encrypted-input" placeholder="Enter encrypted text here" rows="4"></textarea>
+        <button id="decrypt-btn">Decrypt</button>
+        <div id="decrypted-text"></div>
+        <p>
+            <a href="index.html" class="nav-button">Go to Encrypt Page</a>
+        </p>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="decrypt.js"></script>
+</body>
+</html>
